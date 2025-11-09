@@ -1,0 +1,1 @@
+"""banners.py stub"""

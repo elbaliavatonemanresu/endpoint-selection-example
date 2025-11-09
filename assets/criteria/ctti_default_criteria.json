@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "criteria": [
+    {
+      "id": "c01",
+      "name": "Patients identified importance",
+      "weight": 10,
+      "anchors": {
+        "hi": "Patients identify as important",
+        "lo": "No involvement"
+      },
+      "active": true
+    },
+    {
+      "id": "c02",
+      "name": "Addresses an unmet need",
+      "weight": 9,
+      "anchors": {
+        "hi": "High unmet need",
+        "lo": "No unmet need"
+      },
+      "active": true
+    },
+    {
+      "id": "c03",
+      "name": "Benefit from real-world/real-time data",
+      "weight": 8,
+      "anchors": {
+        "hi": "Real-time highly beneficial",
+        "lo": "No improvement"
+      },
+      "active": true
+    },
+    {
+      "id": "c04",
+      "name": "Reduces participation burden",
+      "weight": 7,
+      "anchors": {
+        "hi": "Significantly reduces burden",
+        "lo": "Increases burden"
+      },
+      "active": true
+    },
+    {
+      "id": "c05",
+      "name": "Significant disease/condition",
+      "weight": 7,
+      "anchors": {
+        "hi": "Very significant",
+        "lo": "Insignificant"
+      },
+      "active": true
+    },
+    {
+      "id": "c06",
+      "name": "Tech easily tolerated",
+      "weight": 7,
+      "anchors": {
+        "hi": "Very easy to tolerate",
+        "lo": "Very difficult"
+      },
+      "active": true
+    },
+    {
+      "id": "c07",
+      "name": "Broader participation",
+      "weight": 6,
+      "anchors": {
+        "hi": "Very likely to broaden",
+        "lo": "Very unlikely"
+      },
+      "active": true
+    },
+    {
+      "id": "c08",
+      "name": "Easily comprehensible",
+      "weight": 6,
+      "anchors": {
+        "hi": "Easy to comprehend",
+        "lo": "Difficult to comprehend"
+      },
+      "active": true
+    },
+    {
+      "id": "c09",
+      "name": "Tech maturity advanced",
+      "weight": 5,
+      "anchors": {
+        "hi": "Advanced",
+        "lo": "Very early"
+      },
+      "active": true
+    },
+    {
+      "id": "c10",
+      "name": "Measures multiple endpoints",
+      "weight": 5,
+      "anchors": {
+        "hi": "Many endpoints",
+        "lo": "Single endpoint only"
+      },
+      "active": true
+    },
+    {
+      "id": "c11",
+      "name": "Reduces site work",
+      "weight": 4,
+      "anchors": {
+        "hi": "Significantly reduces",
+        "lo": "No impact"
+      },
+      "active": true
+    },
+    {
+      "id": "c12",
+      "name": "Adaptable across diseases/TAs",
+      "weight": 4,
+      "anchors": {
+        "hi": "Across many TAs",
+        "lo": "Single TA only"
+      },
+      "active": true
+    },
+    {
+      "id": "c13",
+      "name": "Amenable to collaboration",
+      "weight": 3,
+      "anchors": {
+        "hi": "Highly likely",
+        "lo": "Highly unlikely"
+      },
+      "active": true
+    },
+    {
+      "id": "c14",
+      "name": "Reduces ascertainment bias",
+      "weight": 3,
+      "anchors": {
+        "hi": "New opportunity for unbiased ascertainment",
+        "lo": "No new opportunity"
+      },
+      "active": true
+    }
+  ]
+}
