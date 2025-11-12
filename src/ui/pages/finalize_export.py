@@ -136,16 +136,37 @@ def render():
                     include_rationales=include_rationales
                 )
 
+            # Read PDF file for download
+            with open(result_path, "rb") as pdf_file:
+                pdf_bytes = pdf_file.read()
+
             # Show success message
             st.success(
                 f"✅ **Export complete!**\n\n"
-                f"PDF report saved to:\n"
-                f"`{result_path}`"
+                f"PDF report generated successfully."
             )
 
             # Show file size
-            file_size = Path(result_path).stat().st_size / 1024  # KB
+            file_size = len(pdf_bytes) / 1024  # KB
             st.info(f"📄 File size: {file_size:.1f} KB")
+
+            # Download button
+            st.download_button(
+                label="⬇️ Download PDF Report",
+                data=pdf_bytes,
+                file_name=filename,
+                mime="application/pdf",
+                type="primary",
+                use_container_width=True,
+            )
+
+            # Show local save path (for desktop users)
+            with st.expander("💾 Local save location (desktop only)"):
+                st.code(result_path)
+                st.caption(
+                    "Note: On Streamlit Cloud, files are saved temporarily on the server. "
+                    "Use the download button above to save to your computer."
+                )
 
             # Show what's included
             with st.expander("📋 What's included in the PDF"):
