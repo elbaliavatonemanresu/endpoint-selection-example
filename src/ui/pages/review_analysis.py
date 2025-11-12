@@ -23,8 +23,8 @@ def render():
     # Check if there are any scores
     if not scenario.scores:
         st.warning("⚠️ No scores entered yet. Please complete scoring before viewing analysis.")
-        if st.button("← Go to Overview"):
-            st.session_state.current_page = "overview"
+        if st.button("← Go to Scoring"):
+            st.session_state.current_page = "unified_scoring"
             st.rerun()
         return
 
@@ -53,8 +53,8 @@ def render():
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("← Back to Overview", use_container_width=True):
-            st.session_state.current_page = "overview"
+        if st.button("← Back to Scoring", use_container_width=True):
+            st.session_state.current_page = "unified_scoring"
             st.rerun()
 
     with col2:
