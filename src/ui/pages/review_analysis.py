@@ -150,7 +150,7 @@ def render_contributions(scenario, analysis_service):
     for criterion_id, criterion_info in contributions["criteria"].items():
         row = {
             "Criterion": criterion_info["name"],
-            "Weight": criterion_info["weight"],
+            "Weight": str(criterion_info["weight"]),
         }
 
         for opt_id in selected_options:
